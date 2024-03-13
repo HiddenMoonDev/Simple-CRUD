@@ -9,7 +9,7 @@ pip install flask-SQLAlchemy
 pip install SQLAlchemy
 ```
 
-# To create SQLite database use this command in main.py:
+## To create SQLite database use this command in main.py:
 ```python
 with app.app_context():
   db.create_all()
