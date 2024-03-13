@@ -1,6 +1,6 @@
 # This is simple CRUD app on Flask and SQLite database
 
-## Installatin
+## Installation
 First of all u need to download this to make this app work:
 
 ```bash
