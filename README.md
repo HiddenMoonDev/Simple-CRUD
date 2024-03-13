@@ -7,3 +7,9 @@ First of all u need to download this to make this app work:
 pip install flask
 pip install flask-SQLAlchemy
 pip install SQLAlchemy
+```
+
+#To create SQLite database use this command in main.py:
+```python
+
+```
