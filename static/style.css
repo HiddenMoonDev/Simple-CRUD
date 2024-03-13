@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+}
+  
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.crud-form {
+  margin-bottom: 20px;
+}
+
+.crud-form input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.crud-form .btn-create {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.data-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.data-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-list li:last-child {
+  border-bottom: none;
+}
+
+.crud-buttons button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.crud-buttons button.btn-update {
+  background-color: #4CAF50;
+  color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.crud-buttons button.btn-delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container button.btn-update {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

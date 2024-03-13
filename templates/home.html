@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>CRUD Style</h1>
+            <div class="crud-form">
+                <form method="post" action="/">
+                    <input id="text_form" name="text_form" type="text_form" placeholder="Enter data" required>
+                    <button class="btn-create" type="submit">Create</button>
+                </form>
+            </div>
+
+            <ul class="data-list">
+              <!-- Iterate over posts and display each one -->
+              {% for post in posts %}
+              <li>
+                <span>{{ post.id }}</span>
+                <span>{{ post.text }}</span>
+                <div class="crud-buttons">
+                  <button class="btn-update"><a href="/update/{{ post.id}}">Update</a></button>
+                  <button class="btn-delete"><a href="/delete/{{ post.id }}">Delete</a></button>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
