@@ -11,7 +11,7 @@ db = SQLAlchemy(app)
 class Post(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   text = db.Column(db.String(100), nullable=False)
-#
+
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
@@ -24,7 +24,7 @@ def home():
 
   posts = Post.query.all()
   return render_template('home.html', posts=posts)
-#
+
 
 @app.route("/delete/<int:id>")
 def delete(id):
@@ -32,7 +32,7 @@ def delete(id):
   db.session.delete(post)
   db.session.commit()
   return redirect(url_for('home'))
-#
+
 
 @app.route("/update/<int:id>", methods=['GET', 'POST'])
 def update(id):
@@ -43,7 +43,7 @@ def update(id):
     return redirect(url_for('home'))
   
   return render_template('update.html', post=post)
-#
+
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=81, debug=True)
