@@ -14,4 +14,3 @@ pip install SQLAlchemy
 with app.app_context():
   db.create_all()
 ```
-Delete Database if u wanna use clean database
